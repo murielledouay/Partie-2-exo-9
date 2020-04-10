@@ -1,9 +1,12 @@
-#bluecolor{
-  background-color: #2980B9;
+.blueColor{
+  background-color: #2574A9;
 }
-#violetcolor{
-  background-color: #ea2FDD;
+.violetColor{
+  background-color: #9A12B3;
 }
-#redcolor{
-  background-color: #E74535;
+.redColor{
+  background-color: #DB0A5B;
+}
+ul{
+  list-style-type: none;
 }

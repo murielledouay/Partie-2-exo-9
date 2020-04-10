@@ -6,36 +6,47 @@
   <link rel="stylesheet" href="Assets/CSS/style.css"/>
 </head>
 <body>
-  <form action="ma-page-de-traitement" method="post">
-  <label for"name">Votre identité :</label>
-<fieldset id="bluecolor">
+  <form action="#" method="post">
+    <!-- # et method géré par le développeur-->
+<!--section Votre identité-->
+    <fieldset class="blueColor">
+      <legend class="blueColor">Votre identité</legend>
       <ol>
-        <li>Nom : <input type="text" id="name" name="user-name">
-        <li>Prénom : <input type="text" id="forname" name="user-forname"/>
-        <li>Adresse mail : <input type="text" id="mailAdress" name="user-mailAdress"/>
+        <li><label for="user-name">Nom : </label><input type="text" id="name" name="user-name" placeholder="Nom"/></li>
+        <li><label>Prénom : <input type="text" id="forname" name="user-forname" placeholder="Prénom"/></label></li>
+        <li><label>Adresse mail : <input type="email" id="mailAddress" name="user-mailAddress" placeholder="Adresse mail"/></label></li>
       </ol>
-</fieldset>
-  <label for"name">Adresse de livraison :</label>
-<fieldset id="violetcolor">
+    </fieldset>
+<!--section Adresse de livraison-->
+    <fieldset class="violetColor">
+      <legend class="violetColor">Adresse de livraison</legend>
       <ol>
-        <li>Adresse :<textarea name="name" rows="4" cols="15"></textarea>
-        <li>Code postal : <input typ="text" id="forname" name="user-forname"/>
-        <li>Ville : <input type="text" id="mailAdress" name="user-mailAdress"/>
+        <li><label for="address">Adresse :</label><textarea name="address" rows="4" cols="20" id="address"></textarea></li>
+        <li><label>Code postal : <input type="text" id="zipCode" name="user-zipCode" placeholder="Code postal"/></label></li>
+        <li><label>Ville : <input type="text" id="city" name="user-city" placeholder="Ville"/>
+        </label></li>
       </ol>
-</fieldset>
-  <label for"name">Informations de règlement :</label>
-<fieldset id="redcolor">
+    </fieldset>
+<!--section Informations de règlement-->
+    <fieldset class="redColor">
+      <legend class="redColor">Informations de règlement</legend>
       <ol>
-        <li>Type de carte bancaire : <input type="text" id="name" name="user-name"/>
-          <ul><li>VISA</li><li>Mastercard</li></ul>
-        <li>Numéro de carte : <input type="text" id="forname" name="user-forname"/>
-        <li>Code de sécurité : <input type="text" id="mailAdress" name="user-mailAdress"/>
-        <li>Nom du titulaire : <input type="text" id="mailAdress" name="user-mailAdress"/>
+        <li>Type de carte bancaire :
+          <ul>
+            <li><input type="radio" id="visa" name="typeOfCard" value="visa"/><label for="visa">VISA</label></li>
+            <li><input type="radio" id="mastercard" name="typeOfCard" value="mastercard"/><label for="mastercard">Mastercard</label></li>
+          </ul>
+        </li>
+        <li><label>Numéro de carte : <input type="text" id="cardNumber" name="user-cardNumber" placeholder="Numéro de carte"/></label></li>
+        <li><label>Code de sécurité : <input type="text" id="securityCode" name="user-securityCode" placeholder="Code de sécurité"/></label></li>
+        <li><label>Nom du titulaire : <input type="text" id="owner" name="user-owner" placeholder="Nom du titulaire"/></label></li>
       </ol>
-</fieldset>
-    <div class="button">
-      <button type="submit"> J'achète !</button>
-    </div>
+    </fieldset>
+<!--différentes façon d'écrire le bouton-->
+    <button id="buyButton" name="buyButton" type="submit">J'achète !</button>
+    <button id="buyButton" name="buyButton" type="button">J'achète !</button>
+    <input id="buyButton" name="buyButton" type="submit" value="J'achète!"/>
+    <input id="buyButton" name="buyButton" type="button" value="J'achète!"/>
   </form>
 </body>
 </html>
